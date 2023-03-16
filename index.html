@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <div class="main-div">
+        <div class="box-div">
+            <img src="illustration-box-desktop.svg" alt="box-img" class="box-img">
+        </div>
+        <div class="img-div">
+            <img src="illustration-woman-online-mobile.svg" alt="llustration" class="main-mob-img">
+            <img src="bg-pattern-mobile.svg" alt="pattern" class="mob-pattern">
+            <img src="illustration-woman-online-desktop.svg" alt="illustration" class="main-desktop-img">
+            <img src="bg-pattern-desktop.svg" alt="pattern" class="desktop-pattern">
+        </div>
+        <div class="info-div">
+            <h1>FAQ</h1>
+            <div class="first">
+                <div class="button-div">
+                    <button class="first-btn">How many team members can I invite?</button>
+                <img src="icon-arrow-down.svg" alt="arrow-icon" class="arrow-1">
+                </div>
+                <p class="first-p">You can invite up to 2 additional users on the Free plan. There is no limit on 
+                    team members for the Premium plan.</p>
+                    <hr>
+            </div>
+            <div class="second">
+                <div class="button-div">
+                <button class="second-btn">What is the maximum file upload size?</button>
+                <img src="icon-arrow-down.svg" alt="arrow-icon" class="arrow-2">
+                </div>
+                <p class="second-p">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+                <hr>
+            </div>
+            <div class="third">
+                <div class="button-div">
+                <button class="third-btn">How do I reset my password?</button>
+                <img src="icon-arrow-down.svg" alt="arrow-icon" class="arrow-3">
+                </div>
+                <p class="third-p">Click “Forgot password” from the login page or “Change password” from your profile page.
+                    A reset link will be emailed to you.</p>
+                    <hr>
+            </div>
+            <div class="fourth">
+                <div class="button-div">
+                <button class="fourth-btn">Can I cancel my subscription?</button>
+                <img src="icon-arrow-down.svg" alt="arrow-icon" class="arrow-4">
+                </div>
+                <p class="fourth-p">Yes! Send us a message and we’ll process your request no questions asked.</p>
+                <hr>
+            </div>
+            <div class="fifth">
+                <div class="button-div">
+                <button class="fifth-btn">Do you provide additional support?</button>
+                <img src="icon-arrow-down.svg" alt="arrow-icon" class="arrow-5">
+                </div>
+                <p class="fifth-p">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <script>
+        const buttonFirst = document.querySelector(".first-btn")
+        const firstP = document.querySelector(".first-p")
+        const arrowFirst = document.querySelector(".arrow-1")
+
+        const buttonSecond = document.querySelector(".second-btn")
+        const secondP = document.querySelector(".second-p")
+        const arrowSecond = document.querySelector(".arrow-2")
+
+        const buttonThird = document.querySelector(".third-btn")
+        const thirdP = document.querySelector(".third-p")
+        const arrowThird = document.querySelector(".arrow-3")
+
+        const buttonFourth = document.querySelector(".fourth-btn")
+        const fourthP = document.querySelector(".fourth-p")
+        const arrowFourth = document.querySelector(".arrow-4")
+
+        const buttonFifth = document.querySelector(".fifth-btn")
+        const fifthP = document.querySelector(".fifth-p")
+        const arrowFifth = document.querySelector(".arrow-5")
+
+        buttonFirst.addEventListener('click', function (){
+            firstP.style.display = 'block'
+            arrowFirst.style.transform = 'rotate(180deg)';
+            buttonFirst.style.fontWeight = "700";
+            secondP.style.display = 'none'
+            thirdP.style.display = 'none'
+            fourthP.style.display = 'none'
+            fifthP.style.display = 'none'
+        })
+
+        buttonSecond.addEventListener('click', function (){
+            secondP.style.display = 'block'
+            arrowSecond.style.transform = 'rotate(180deg)';
+            buttonSecond.style.fontWeight = "700";
+            firstP.style.display = 'none'
+            thirdP.style.display = 'none'
+            fourthP.style.display = 'none'
+            fifthP.style.display = 'none'
+        })
+
+        buttonThird.addEventListener('click', function(){
+            thirdP.style.display = 'block'
+            arrowThird.style.transform = 'rotate(180deg)';
+            buttonThird.style.fontWeight = "700";
+            firstP.style.display = 'none'
+            secondP.style.display = 'none'
+            fourthP.style.display = 'none'
+            fifthP.style.display = 'none'
+        })
+        buttonFourth.addEventListener('click', function(){
+            fourthP.style.display = 'block'
+            arrowFourth.style.transform = 'rotate(180deg)';
+            buttonFourth.style.fontWeight = "700";
+            firstP.style.display = 'none'
+            thirdP.style.display = 'none'
+            secondP.style.display = 'none'
+            fifthP.style.display = 'none'
+        })
+        buttonFifth.addEventListener('click', function(){
+            fifthP.style.display = 'block'
+            arrowFifth.style.transform = 'rotate(180deg)';
+            buttonFifth.style.fontWeight = "700";
+            firstP.style.display = 'none'
+            thirdP.style.display = 'none'
+            fourthP.style.display = 'none'
+            secondP.style.display = 'none'
+        })
+    </script>
+</body>
+</html>
